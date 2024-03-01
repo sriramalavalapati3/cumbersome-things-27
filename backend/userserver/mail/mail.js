@@ -14,16 +14,16 @@ mroute.post("/sendotp",async(req,res)=>{
         }
     
         console.log('Credentials obtained, sending message...');
+    
         const transporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
+            host: 'smtp.gmail.com',
             port: 587,
-            secure: false, // Use `true` for port 465, `false` for all other ports
             auth: {
                 user: 'amolthakare630@gmail.com',
                 pass: 'gpckhcmostfmxzii'
-            },
-          });
-          
+
+            }
+        });
         // const email = req.body.email;
         let digits = '0123456789';
         let limit = 4;

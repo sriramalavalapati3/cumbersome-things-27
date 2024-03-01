@@ -25,7 +25,7 @@ app.use("/channel",workR)
 app.use("/cnl", channle_router)
 
 
-app.listen(8080,async ()=>{
+app.listen(5000,async ()=>{
     try {
         await connection
         console.log("server running at port no 8080 \n db connected");
