@@ -9,7 +9,7 @@ function login(event) {
 }
 
 async function login_data(Body){
-    let res = await fetch('https://nice-cyan-chiton-vest.cyclic.app/cred/login', {
+    let res = await fetch('https://cumbersome-things-27.onrender.com/cred/login', {
         method: "POST",
         body: JSON.stringify(Body),
         headers: { 'Content-Type': 'application/json' }
