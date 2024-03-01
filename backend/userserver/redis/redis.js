@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { createClient } = require('redis');
 const client = createClient({
     password: process.env.redish_password,

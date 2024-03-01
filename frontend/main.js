@@ -7,7 +7,7 @@ const socket = io("https://socketbe-prags1709.onrender.com/",{transports:["webso
 
 window.addEventListener("load",async ()=>{
   
-  let user_fetch = await fetch(`https://cumbersome-things-27.onrender.com/channel/data/${data._id}`, {
+  let user_fetch = await fetch(`https://funny-deer-bracelet.cyclic.app/channel/data/${data._id}`, {
     headers: { 'Content-Type': 'application/json' }
   })
 

@@ -12,7 +12,7 @@
 
 ##Deploy Link
 - Netlify website link-> https://singular-axolotl-96063b.netlify.app/
-- render Backend link-> https://cumbersome-things-27.onrender.com/
+- render Backend link-> https://funny-deer-bracelet.cyclic.app/
 - render Socket link -> https://socketbe-prags1709.onrender.com
 
 ## Tech Stacks Used
