@@ -1,9 +1,10 @@
-const Redis=require("ioredis");
-require("dotenv").config()
-const client = new Redis({
-    port: 10058,
-    host: process.env.redish_host,
-    password: process.env.redish_password
-})
+const { createClient } = require('redis');
+const client = createClient({
+    password: process.env.redish_password,
+    socket: {
+        host: process.env.redish_host,
+        port: 18321
+    }
+});
 
 module.exports={client}
