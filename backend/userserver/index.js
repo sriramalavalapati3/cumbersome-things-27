@@ -6,7 +6,8 @@ const {mroute}=require("./mail/mail")
 const {loginR}=require("./routes/login")
 const {workR}=require("./routes/workspace")
 const {searchrouter}=require("./routes/searchrouter")
-const {channle_router}=  require("./routes/channel.route")
+const {channle_router}=  require("./routes/channel.route");
+const { client } = require("./redis/redis");
 const app=express();
 app.use(express.json());
 
@@ -28,6 +29,7 @@ app.use("/cnl", channle_router)
 app.listen(5000,async ()=>{
     try {
         await connection
+        await client
         console.log("server running at port no 8080 \n db connected");
     } catch (error) {
         console.log("db is not connected")

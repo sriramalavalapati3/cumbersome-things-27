@@ -1,7 +1,7 @@
 const express=require("express");
 const mroute=express.Router();
 const bcrypt = require('bcrypt');
- const {client}=require("../redis/redis")
+ const {client}=require("../redis/redis");
 const nodemailer = require('nodemailer');
 const {Rmodel}=require("../models/user")
 // Generate SMTP service account from ethereal.email
